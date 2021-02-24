@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Recoleta";
+    src: url("../fonts/recoleta.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto_Sans";
+    src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "Recoleta";
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
+    color: #163A24;
+}
+
+h2 {
+    font-family: "Recoleta"; 
+    font-size: 28px;
+    line-height: 31.5px;
+    font-weight: 600;
+    color: #163A24;
+}
+
+h3 {
+    font-family: "Recoleta";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #163A24;
+}
+
+p {
+    font-family: "Noto_Sans";
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #163A24;
+}
+
+//colors
+
+$green-background:#163A24;
+$white-background:#E5E5E5;
+$grey-background: #F2EFE6;
+$green-btn: #198C36;
+$pink-btn: #FAB5A0;
+$white-text:#FBFAF7;
+
+//animations
+.animation {
+    animation-name: smoke;
+    animation-iteration-count: infinite;
+    animation-duration:1.5s;
+    animation-timing-function:linear;
+}
+
+.star {
+    animation-name: star;
+    animation-iteration-count: infinite;
+    animation-duration:2.5s;
+}
+
+@keyframes smoke {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -20px);
+    }
+}
+
+@keyframes star {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1; 
+    }
+}
+
+.book_circle {
+    animation-name: circle-book;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes circle-book {
+    0% {
+        transform: rotate(0deg); 
+    }
+    50% {
+        transform: rotate(180deg); 
+    }
+
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+//buttons effects
+
+.get-started::before {
+    content: '';
+    background-color: #2abe4f;
+    position: absolute;
+    transition: 1s all ease;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+.get-started:hover::before {
+    width: 100%;
+}
+
+
+
+
+.call::before {
+    content: '';
+    background-color: #2abe4f;
+    position: absolute;
+    transition: 1s all ease;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.call:hover::before {
+    width: 100%;
+}
+
+.e-book::before {
+    content: '';
+    background-color: #2abe4f;
+    position: absolute;
+    transition: 1s all ease;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.e-book:hover::before {
+    width: 100%;
+}
+
+.book-call__btn::before {
+    content: '';
+    background-color: #f3c2b3;
+    position: absolute;
+    transition: 1s all ease;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.book-call__btn:hover::before {
+    width: 100%;
+}
+
+.sign-up__btn::before {
+    content: '';
+    background-color: #2abe4f;
+    position: absolute;
+    transition: 1s all ease;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.sign-up__btn:hover::before {
+    width: 100%;
+}
+
+.contact__submit::before {
+    content: '';
+    background-color: #2abe4f;
+    position: absolute;
+    transition: 1s all ease;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.contact__submit:hover::before {
+    width: 100%;
+}
+
